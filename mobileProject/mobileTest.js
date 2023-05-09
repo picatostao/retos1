@@ -17,3 +17,17 @@ console.log("cambios ", miTelefono.getTradeM());
 console.log("cambios ", miTelefono.getModel());
 console.log("cambios ", miTelefono.getColor());
 console.log("cambios ", miTelefono.getPrice());
+console.log("the characteristics of the mobile name are");
+console.log("name:", miTelefono.getName());
+console.log("trademark: ", miTelefono.getTradeM());
+console.log("model:", miTelefono.getModel());
+console.log("color:", miTelefono.getColor());
+console.log("price:", miTelefono.getPrice());
+var miTelefono1 = new mobile_1.Mobile("Sony", "Sony", "x5", "azul", 250);
+var miTelefono2 = new mobile_1.Mobile("alcatel", "alcatel", "c39", "verde", 120);
+var mitelefono3 = new mobile_1.Mobile("nokia", "nokia", "3310", "gris acero", 50);
+var telefonos = [miTelefono1, miTelefono2, mitelefono3];
+for (var _i = 0, telefonos_1 = telefonos; _i < telefonos_1.length; _i++) {
+    var mobile = telefonos_1[_i];
+    mobile.printAll();
+}

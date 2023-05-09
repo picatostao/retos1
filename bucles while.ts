@@ -1,13 +1,15 @@
-function hasEven(myNums:number[]):boolean {
-    for(let num of myNums){
-        if (num%2 == 0){
-            return true;
+export function hasEven(myNums:number[]):boolean{
+    let i=0
+    while (i<myNums.length){
+        if(myNums[i]%2==0){
+            return true
         }
+        i++
     }
     return false
 }
 
-function starWithM (myNames:string[]):boolean{
+export function starWithM (myNames:string[]):boolean{
     let i=0
     while(i<myNames.length){
         if(myNames[i].charAt(0)!=="M"){

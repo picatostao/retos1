@@ -2,7 +2,7 @@
   ////////////////////////
  // 2.signos zodiacales//
 ////////////////////////
-function zodiac(day:number,month:number){
+export function zodiac(day:number,month:number){
     switch(month){
         case 1:
             if(day>=1 && day<=19){
@@ -93,7 +93,7 @@ function zodiac(day:number,month:number){
 ////////////////////////
 
 
-function continent(country:string){
+export function continent(country:string){
     switch(country){
         case "España" || "Portugal" || "Francia" || "Italia"||"alemania":
             console.log("estás en Europa")
@@ -119,7 +119,7 @@ function continent(country:string){
  //      4 es par      //
 ////////////////////////
 
-function isEven(num:number){
+export function isEven(num:number){
     if (num%2==0){
         console.log(num,"es par")
     }else{
