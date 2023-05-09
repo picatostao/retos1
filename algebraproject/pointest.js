@@ -23,3 +23,12 @@ console.log(point1.calculateQuadrant());
 console.log(point2.calculateQuadrant());
 console.log(point3.calculateQuadrant());
 console.log(point4.calculateQuadrant());
+var punto5 = new point_1.Point(3, 2);
+var ArrPuntos = [
+    new point_1.Point(2, 2),
+    new point_1.Point(5, 4),
+    new point_1.Point(3, 3),
+    new point_1.Point(8, 6)
+];
+var cercano = punto5.calcularNearest(ArrPuntos);
+console.log("el punto mas cercano es ", cercano);

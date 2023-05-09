@@ -43,8 +43,19 @@ export class Point{
             return 3
         }else{ 
             return 4
-        } 
+        }       
+    }
+    calcularNearest(points:Point[]):Point{
+        let puntocercano:Point=points[0]
+        for(let i=1;i<points.length;i++){
+            let distanceA=this.calculateDistance(points[i])
+            let distanceB=this.calculateDistance(points[i])
+            if (distanceA<distanceB){
+                puntocercano=points[i]
+            }
+            
+        }
+        return puntocercano
 
-        
     }
 }

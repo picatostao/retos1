@@ -50,6 +50,17 @@ var Point = /** @class */ (function () {
             return 4;
         }
     };
+    Point.prototype.calcularNearest = function (points) {
+        var puntocercano = points[0];
+        for (var i = 1; i < points.length; i++) {
+            var distanceA = this.calculateDistance(points[i]);
+            var distanceB = this.calculateDistance(points[i]);
+            if (distanceA < distanceB) {
+                puntocercano = points[i];
+            }
+        }
+        return puntocercano;
+    };
     return Point;
 }());
 exports.Point = Point;
