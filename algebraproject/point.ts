@@ -20,4 +20,16 @@ export class Point{
     toString():string{
         return `(${this.x},${this.y})`
     }
+    distanceToOrigin():number{
+        let distancia=Math.sqrt(this.x*this.x + this.y*this.y)
+        return distancia                                              ///math.sqrt---raiz cuadrada
+    }
+    calculateDistance(anotherPoint:Point):number{
+        let x1=this.x
+        let y1=this.y
+        let x2=anotherPoint.getx()
+        let y2=anotherPoint.gety()
+        let distance=Math.sqrt((x2*x1)**2+(y2-y1)**2)
+        return distance 
+    }
 }
