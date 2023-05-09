@@ -45,8 +45,14 @@ public setColor(color:string){
 public setPrice(price:number){
     this.price=price
 }
-
-
+public printAll(){
+console.log("the characteristics of the mobile name are")
+console.log("name:",this.getName())
+console.log("trademark: ",this.getTradeM())
+console.log("model:",this.getModel())
+console.log("color:",this.getColor())
+console.log("price:",this.getPrice())
+}
 
 }
 
